@@ -37,7 +37,7 @@ To create an Ubuntu EC2 instance in AWS, follow these steps:
    - In the "Step 6: Configure Security Group" section, 
    - configure the security group to allow SSH access (port 22) from your IP address.
    - You allow other ports based on your requirements for web access (e.g., HTTP(80), HTTPS(443)) 
-   - You allow ports 2smtp 25, smtps 465, jenkins 8080, grafana 3000, prometheus 9090, prometheus/blackbox_exporter 9115, node-exporter 9100 .
+   - You allow ports 2smtp 25, smtps 465, jenkins 8080, grafana 3000, prometheus 9090, prometheus/blackbox_exporter 9115, node-exporter 9100 ,sonarQube 9000 Nexus 8081.
    - its better to use 3000 to 10000 port range.
    - You allow ports 6443 for k8 cluter and 30000 to 33000 port range for k8 slave-nodes porting
    - Click "Review and Launch".
