@@ -21,38 +21,7 @@ cd prometheus-3.6.0-rc.1.linux-amd64
 
 browse with your ip for prometheus Example http://ip:9090
 
-# config the prometheus yaml to watch metrics on promethes
-# prometheus.yml
----
-static_configs:
-      - targets: ["localhost:9090"]
 
-  - job_name: 'node_exporter'
-    static_configs:
-      - targets: ["65.0.102.234:9100"]
-
-  - job_name: 'jenkins'
-    metrics_path: '/prometheus'
-    static_configs:
-      - targets: ["65.0.102.234:8080"]
-
-
-  - job_name: 'blackbox'
-    metrics_path: /probe
-    params:
-      module: [http_2xx]  # Look for a HTTP 200 response.
-    static_configs:
-      - targets:
-        - http://prometheus.io    # Target to probe with http..
-        - http://ip:31129 # Target to probe with http on port 8080.
-    relabel_configs:
-      - source_labels: [__address__]
-        target_label: __param_target
-      - source_labels: [__param_target]
-        target_label: instance
-      - target_label: __address__
-        replacement: 15.207.84.111:9115  # The blackbox exporter's real hostname:port.
----
 
 
 # grafana setup
