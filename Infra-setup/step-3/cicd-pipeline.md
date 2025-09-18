@@ -6,7 +6,7 @@
    - Search for "Eclipse Temurin Installer" and select it.
    - Click on the "Install without restart" button.
 
-2. **Pipeline Maven Integration**:
+2. **Pipeline Maven Integration and Maven Integration**:
    - This plugin provides Maven support for Jenkins Pipeline.
    - It allows you to use Maven commands directly within your Jenkins Pipeline scripts.
    - To install, follow the same steps as above, but search for "Pipeline Maven Integration" instead.
@@ -21,12 +21,12 @@
    - This plugin integrates Jenkins with SonarQube by providing a scanner that analyzes code during builds.
    - You can install it from the Jenkins plugin manager as described above.
 
-5. **Kubernetes CLI**:
+5. **Kubernetes CLI and kubernetes client API**:
    - This plugin allows Jenkins to interact with Kubernetes clusters using the Kubernetes command-line tool (`kubectl`).
    - It's useful for tasks like deploying applications to Kubernetes from Jenkins jobs.
    - Install it through the plugin manager.
 
-6. **Kubernetes**:
+6. **Kubernetes and kubernetes credentials**:
    - This plugin integrates Jenkins with Kubernetes by allowing Jenkins agents to run as pods within a Kubernetes cluster.
    - It provides dynamic scaling and resource optimization capabilities for Jenkins builds.
    - Install it from the Jenkins plugin manager.
